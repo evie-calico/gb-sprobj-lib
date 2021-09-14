@@ -129,6 +129,7 @@ MemCopy::
 SECTION "VBlank Handler", ROM0
 VBlankHandler:
   ; Push sprites to OAM
+  ld a, HIGH(wShadowOAM)
   call hOAMDMA
   
   pop hl
