@@ -6,6 +6,7 @@
 ;
 ; The library is only 127 bytes of ROM0, 160 bytes of WRAM0 for Shadow OAM, and a
 ; single HRAM byte for tracking the current position in OAM.
+; (not counting the 8 required for OAM DMA)
 ;
 ; The library is relatively simple to use, with 4 steps to rendering:
 ; 1. Call InitSprObjLib during initilizations - This copies the OAMDMA function to
